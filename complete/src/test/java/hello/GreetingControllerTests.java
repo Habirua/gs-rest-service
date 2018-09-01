@@ -39,6 +39,7 @@ public class GreetingControllerTests {
     @Test
     public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
     	System.out.println("This is Madhu's changes");
+    	System.out.println("This is Habiru's changes");
 
         this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
                 .andExpect(jsonPath("$.content").value("Hello, World!"));
