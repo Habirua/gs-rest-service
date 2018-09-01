@@ -13,7 +13,7 @@ public class GreetingController {
 
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        String currentDate = "Date: " + new java.util.Date();
+        String currentDate = "Current Date: " + new java.util.Date();
         
         System.out.println(currentDate);
         //name = (currentDate+name);
